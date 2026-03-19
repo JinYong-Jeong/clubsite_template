@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #FFFFFF;
+    color: #111111;
+    font-family: 'Inter', 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: #3B82F6;
+    color: #FFFFFF;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #F8F8F8;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #E5E5E5;
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #777777;
+  }
+}
+
+@layer components {
+  .section-title {
+    @apply text-3xl md:text-4xl font-semibold tracking-tight text-aing-text;
+  }
+  
+  .section-subtitle {
+    @apply text-aing-muted text-base md:text-lg leading-relaxed;
+  }
+  
+  .card {
+    @apply bg-white border border-aing-border shadow-sm rounded-2xl p-6 transition-all duration-300;
+  }
+  
+  .card:hover {
+    @apply border-blue-200;
+    box-shadow: 0 4px 20px rgba(59, 130, 246, 0.06);
+  }
+  
+  .btn-primary {
+    @apply bg-aing-dark text-white font-medium px-6 py-3 rounded-full transition-all duration-200 hover:bg-gray-800 hover:scale-105 active:scale-95;
+  }
+  
+  .btn-ghost {
+    @apply border border-aing-border text-aing-text font-medium px-6 py-3 rounded-full transition-all duration-200 hover:border-aing-blue hover:text-aing-blue;
+  }
+  
+  .tag {
+    @apply text-xs font-mono px-3 py-1 rounded-full bg-gray-100 border border-aing-border text-aing-muted;
+  }
+  
+  .tag-blue {
+    @apply text-xs font-mono px-3 py-1 rounded-full bg-aing-blue-light border border-blue-200 text-aing-blue;
+  }
+
+  .nav-link {
+    @apply text-aing-muted hover:text-aing-text transition-colors duration-200 text-sm font-medium;
+  }
+
+  .input-field {
+    @apply w-full bg-white border border-aing-border rounded-xl px-4 py-3 text-aing-text placeholder-aing-muted focus:outline-none focus:border-aing-blue transition-colors duration-200;
+  }
+
+  .gradient-line {
+    background: linear-gradient(90deg, transparent, #3B82F6, transparent);
+    height: 1px;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, #111111 0%, #3B82F6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .glass {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+  
+  .noise {
+    position: relative;
+  }
+  
+  .noise::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.02'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 0;
+  }
+}
