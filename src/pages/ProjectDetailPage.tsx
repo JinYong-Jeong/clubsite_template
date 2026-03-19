@@ -45,7 +45,7 @@ const demoProject: Project = {
   status: 'ongoing',
   semester: '2026 Spring',
   tags: ['CV', 'ResNet', 'PyTorch'],
-  github: 'https://github.com/aing-gachon/26-Spring-ResNet-Study',
+  github: 'https://github.com/yourclub-github/26-Spring-ResNet-Study',
   created_at: '2026-03-01T00:00:00Z',
   updated_at: '2026-03-01T00:00:00Z',
   project_members: [],

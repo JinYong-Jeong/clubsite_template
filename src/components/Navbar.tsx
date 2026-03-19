@@ -119,7 +119,7 @@ const Navbar: React.FC = () => {
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 group shrink-0">
-          <img src="/logo.png" alt="A.ing" className="h-10 w-auto opacity-90 group-hover:opacity-100 transition-opacity" />
+          <img src="/logo.png" alt="YourClub" className="h-10 w-auto opacity-90 group-hover:opacity-100 transition-opacity" />
         </Link>
 
         {/* Desktop Nav */}

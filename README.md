@@ -1,57 +1,30 @@
-# A.ing Website
+# clubsite_template
 
-가천대학교 AI 학술동아리 A.ing 공식 웹사이트
+🎓 **대학 동아리/학회 웹사이트 템플릿**
 
-## 🚀 Tech Stack
+React + TypeScript + Supabase 기반의 완성형 동아리 웹사이트 템플릿입니다.
 
-- **Frontend**: React 18 + TypeScript + Vite
-- **Styling**: Tailwind CSS
-- **Backend**: Supabase (PostgreSQL + RLS)
-- **Deploy**: Vercel
+## ✨ 주요 기능
 
-## 📁 Project Structure
+- 멤버 관리, 활동/프로젝트 소개
+- 팀원 모집 게시판
+- 공지/스터디/활동 게시판 + 댓글
+- Admin 대시보드 (사이트 설정, 멤버/콘텐츠 관리)
+- 관리자 비밀번호 bcrypt 해싱
+- 모집 중 Navbar 배지 + 구글폼 연결
 
-```
-src/
-├── components/      # 공통 컴포넌트 (Navbar, Footer, AnimatedSection)
-├── context/         # Context (Auth, SiteSettings)
-├── lib/             # Supabase 클라이언트 & 타입
-├── pages/
-│   ├── admin/       # 관리자 페이지
-│   └── ...          # 일반 페이지
-└── App.tsx
-```
+## 🚀 시작하기
 
-## 🗄️ Database Setup
-
-`schema_final.sql` 파일을 Supabase SQL Editor에서 실행합니다.
-
-## 🔑 Admin Setup
-
-1. `schema_final.sql` 실행
-2. Supabase에서 `users` 테이블에 admin 계정 추가:
-```sql
-insert into public.users (name, password_hash, role)
-values ('admin이름', crypt('비밀번호', gen_salt('bf', 10)), 'admin');
+```bash
+git clone https://github.com/JinYong-Jeong/clubsite_template
+cd clubsite_template
+npm install
+cp .env.example .env  # Supabase 키 입력
+npm run dev
 ```
 
-## ⚙️ Environment Variables
+자세한 설정 방법은 [FEATURES.md](./FEATURES.md)를 참고하세요.
 
-```env
-VITE_SUPABASE_URL=your_supabase_url
-VITE_SUPABASE_ANON_KEY=your_anon_key
-```
+## 📄 라이센스
 
-## 📋 Admin Features
-
-| 메뉴 | 기능 |
-|------|------|
-| Settings | 사이트 정보, SNS, 관심분야, 모집 설정 |
-| Members | 멤버 추가/수정/삭제 |
-| Activities | 활동 추가/수정/삭제 |
-| Projects | 프로젝트 관리 |
-| Posts | 게시글 관리 |
-| Team Posts | 팀원 모집글 관리 |
-| Messages | 문의 메시지 확인 |
-| About Ops | 운영진 관리 |
-| Ex-Ops | 전 운영진 관리 |
+MIT

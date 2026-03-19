@@ -20,9 +20,9 @@ const STATUS_LABELS: Record<string, string> = {
 };
 
 const hardcodedFallback: Activity[] = [
-  { id: '1', type: 'study', title: 'ResNet Study', description: 'ResNet-50 논문 분석 및 PyTorch 구현', tags: ['CV', 'ResNet', 'PyTorch'], github: 'https://github.com/aing-gachon/26-Spring-ResNet-Study', status: 'ongoing', semester: '2026 Spring' },
-  { id: '2', type: 'study', title: 'Transformer Study', description: 'Attention is All You Need 구현', tags: ['NLP', 'Transformer'], github: 'https://github.com/aing-gachon/26-Spring-Transformer-Study', status: 'ongoing', semester: '2026 Spring' },
-  { id: '3', type: 'project', title: 'Senior Session', description: 'CV/NLP/RL 팀별 SOTA 모델 커스터마이징', tags: ['Senior', 'Project'], github: 'https://github.com/aing-gachon/26-Spring-Senior-Session', status: 'ongoing', semester: '2026 Spring' },
+  { id: '1', type: 'study', title: 'ResNet Study', description: 'ResNet-50 논문 분석 및 PyTorch 구현', tags: ['CV', 'ResNet', 'PyTorch'], github: 'https://github.com/yourclub-github/26-Spring-ResNet-Study', status: 'ongoing', semester: '2026 Spring' },
+  { id: '2', type: 'study', title: 'Transformer Study', description: 'Attention is All You Need 구현', tags: ['NLP', 'Transformer'], github: 'https://github.com/yourclub-github/26-Spring-Transformer-Study', status: 'ongoing', semester: '2026 Spring' },
+  { id: '3', type: 'project', title: 'Senior Session', description: 'CV/NLP/RL 팀별 SOTA 모델 커스터마이징', tags: ['Senior', 'Project'], github: 'https://github.com/yourclub-github/26-Spring-Senior-Session', status: 'ongoing', semester: '2026 Spring' },
 ];
 
 function formatDateRange(start?: string, end?: string) {
@@ -93,7 +93,7 @@ const HistoryPage: React.FC = () => {
               <span className="text-gradient">활동 히스토리</span>
             </h1>
             <p className="section-subtitle max-w-xl">
-              A.ing의 모든 학기 활동을 한눈에 확인하세요.
+              YourClub의 모든 학기 활동을 한눈에 확인하세요.
             </p>
           </AnimatedSection>
         </div>

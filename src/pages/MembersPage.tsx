@@ -139,7 +139,7 @@ const MembersPage: React.FC = () => {
             <h1 className="section-title text-5xl mb-4">
               <span className="text-gradient">Our People</span>
             </h1>
-            <p className="section-subtitle">AI를 함께 탐구하는 A.ing의 멤버들</p>
+            <p className="section-subtitle">AI를 함께 탐구하는 YourClub의 멤버들</p>
           </AnimatedSection>
         </div>
       </section>

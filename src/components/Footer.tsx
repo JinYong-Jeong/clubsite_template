@@ -6,12 +6,12 @@ import { useSiteSettings } from '../context/SiteSettingsContext';
 const Footer: React.FC = () => {
   const s = useSiteSettings();
 
-  const instagram = s.instagram || 'https://www.instagram.com/aing_gc/';
-  const github = s.github || 'https://github.com/aing-gachon';
+  const instagram = s.instagram || 'https://www.instagram.com/yourclub_official/';
+  const github = s.github || 'https://github.com/yourclub-github';
   const email = s.email || '';
-  const location = s.location || '가천대학교 AI관';
-  const footerText = s.footer_text || '© 2026 A.ing. Licensed under CC BY-NC-SA 4.0.';
-  const description = s.description || '학부생 주도 인공지능 학술 동아리.\n이론을 코드로, 코드를 통찰로.';
+  const location = s.location || '○○대학교 AI관';
+  const footerText = s.footer_text || '© 2026 YourClub. Licensed under CC BY-NC-SA 4.0.';
+  const description = s.description || '학부생 주도 ○○ 학술 동아리.\n클럽의 슬로건을 입력하세요.';
 
   return (
     <footer className="border-t border-aing-border bg-aing-bg-alt">
@@ -19,8 +19,8 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <img src="/logo.png" alt="A.ing" className="h-7 w-auto opacity-90" />
-              <span className="text-xs font-mono text-aing-muted">@ Gachon Univ.</span>
+              <img src="/logo.png" alt="YourClub" className="h-7 w-auto opacity-90" />
+              <span className="text-xs font-mono text-aing-muted">@ Your Univ.</span>
             </div>
             <p className="text-aing-muted text-sm leading-relaxed whitespace-pre-line">
               {description}

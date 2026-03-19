@@ -15,7 +15,7 @@ const SECTIONS = [
     icon: Globe,
     fields: [
       { key: 'description',         label: '동아리 소개 문구',       type: 'textarea', placeholder: '동아리를 소개하는 한 단락' },
-      { key: 'footer_text',         label: '푸터 텍스트',             type: 'text',     placeholder: 'A.ing © 2026.' },
+      { key: 'footer_text',         label: '푸터 텍스트',             type: 'text',     placeholder: 'YourClub © 2026.' },
     ],
   },
   {
@@ -23,11 +23,11 @@ const SECTIONS = [
     label: '연락처 & SNS',
     icon: Megaphone,
     fields: [
-      { key: 'email',     label: '이메일',        type: 'text', placeholder: 'gachon.aing@gmail.com' },
-      { key: 'github',    label: 'GitHub URL',    type: 'text', placeholder: 'https://github.com/aing-gachon' },
-      { key: 'instagram', label: 'Instagram URL', type: 'text', placeholder: 'https://instagram.com/aing_gc' },
+      { key: 'email',     label: '이메일',        type: 'text', placeholder: 'yourclub@gmail.com' },
+      { key: 'github',    label: 'GitHub URL',    type: 'text', placeholder: 'https://github.com/yourclub-github' },
+      { key: 'instagram', label: 'Instagram URL', type: 'text', placeholder: 'https://instagram.com/yourclub_official' },
       { key: 'notion',    label: 'Notion URL',    type: 'text', placeholder: 'https://notion.so/...' },
-      { key: 'location',  label: '위치',           type: 'text', placeholder: '가천대학교 AI관' },
+      { key: 'location',  label: '위치',           type: 'text', placeholder: '○○대학교 AI관' },
     ],
   },
   {

@@ -38,17 +38,17 @@ const interests = ['Computer Vision', 'NLP', 'Reinforcement Learning', 'HCI', 'M
 
 const HomePage: React.FC = () => {
   const s = useSiteSettings();
-  const heroTitle = s.home_hero_title || 'Theory to Code.';
+  const heroTitle = s.home_hero_title || 'Your Slogan';
   const heroSubtitle = s.home_hero_subtitle || '';
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const tagline = s.tagline || 'Theory to Code. Code to Insight.';
+  const tagline = s.tagline || 'Your Slogan Here.';
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const recruitOpen = s.recruit_open === 'true';
   const recruitUrl = s.recruit_url || '/contact';
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const instagramUrl = s.instagram || 'https://www.instagram.com/aing_gc/';
+  const instagramUrl = s.instagram || 'https://www.instagram.com/yourclub_official/';
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const githubUrl = s.github || 'https://github.com/aing-gachon';
+  const githubUrl = s.github || 'https://github.com/yourclub-github';
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -90,7 +90,7 @@ const HomePage: React.FC = () => {
           <div className="flex justify-center mb-8">
             <img
               src="/logo.png"
-              alt="A.ing"
+              alt="YourClub"
               className="h-24 md:h-32 w-auto drop-shadow-lg"
             />
           </div>
@@ -111,7 +111,7 @@ const HomePage: React.FC = () => {
           {/* CTA */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link to={recruitUrl} className="btn-primary flex items-center gap-2 text-sm">
-              Join A.ing
+              Join YourClub
               <ArrowRight size={16} />
             </Link>
             <Link to="/about" className="btn-ghost text-sm">

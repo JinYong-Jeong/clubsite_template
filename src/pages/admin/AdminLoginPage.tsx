@@ -35,7 +35,7 @@ const AdminLoginPage: React.FC = () => {
               <Lock size={20} className="text-aing-blue" />
             </div>
             <h1 className="text-xl font-semibold text-aing-text">Admin Login</h1>
-            <p className="text-aing-muted text-sm mt-1">A.ing 관리자 패널</p>
+            <p className="text-aing-muted text-sm mt-1">YourClub 관리자 패널</p>
           </div>
 
           <form onSubmit={handleSubmit} className="card space-y-4">

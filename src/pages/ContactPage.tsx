@@ -6,11 +6,11 @@ import { useSiteSettings } from '../context/SiteSettingsContext';
 
 const ContactPage: React.FC = () => {
   const s = useSiteSettings();
-  const instagramUrl = s.instagram || 'https://www.instagram.com/aing_gc/';
-  const githubUrl = s.github || 'https://github.com/aing-gachon';
+  const instagramUrl = s.instagram || 'https://www.instagram.com/yourclub_official/';
+  const githubUrl = s.github || 'https://github.com/yourclub-github';
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const emailAddr = s.email || 'gachon.aing@gmail.com';
-  const locationStr = s.location || '가천대학교 AI관';
+  const emailAddr = s.email || 'yourclub@gmail.com';
+  const locationStr = s.location || '○○대학교 AI관';
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const recruitUrl = s.recruit_url || '/contact';
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -83,7 +83,7 @@ const ContactPage: React.FC = () => {
                       <div>
                         <p className="text-xs text-aing-muted mb-0.5">Instagram</p>
                         <p className="text-sm text-aing-text group-hover:text-aing-blue transition-colors">
-                          @aing_gc
+                          @yourclub_official
                         </p>
                       </div>
                     </a>

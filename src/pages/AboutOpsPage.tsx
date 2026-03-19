@@ -227,7 +227,7 @@ const AboutOpsPage: React.FC = () => {
             <h1 className="section-title text-5xl mb-4">
               <span className="text-gradient">운영진</span>
             </h1>
-            <p className="section-subtitle max-w-xl">현재 A.ing을 이끌어 가는 운영진을 소개합니다.</p>
+            <p className="section-subtitle max-w-xl">현재 YourClub을 이끌어 가는 운영진을 소개합니다.</p>
           </AnimatedSection>
           {isAdmin && (
             <button onClick={openAdd} className="btn-primary flex items-center gap-2 text-sm mt-auto">

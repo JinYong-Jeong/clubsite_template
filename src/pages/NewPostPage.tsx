@@ -260,7 +260,7 @@ const NewPostPage: React.FC = () => {
                   <p className="text-red-500 text-xs">{authError}</p>
                 )}
                 <p className="text-xs text-aing-muted">
-                  A.ing 멤버로 등록된 이름과 비밀번호를 입력하세요.
+                  YourClub 멤버로 등록된 이름과 비밀번호를 입력하세요.
                 </p>
               </div>
             )}

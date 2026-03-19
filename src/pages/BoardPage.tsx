@@ -24,7 +24,7 @@ const AVATAR_COLORS = [
 ];
 
 const demoPosts: Post[] = [
-  { id: '1', title: '[공지] 2026 Spring 신규 부원 모집 안내', content: '안녕하세요, A.ing입니다.', author_id: null, category: 'notice', tags: ['모집', '2026'], is_pinned: true, views: 120, created_at: '2026-03-01T00:00:00Z', updated_at: '2026-03-01T00:00:00Z' },
+  { id: '1', title: '[공지] 2026 Spring 신규 부원 모집 안내', content: '안녕하세요, YourClub입니다.', author_id: null, category: 'notice', tags: ['모집', '2026'], is_pinned: true, views: 120, created_at: '2026-03-01T00:00:00Z', updated_at: '2026-03-01T00:00:00Z' },
   { id: '2', title: 'ResNet 구현 스터디 1주차 후기', content: 'ResNet-50을 직접 구현하며...', author_id: null, author_name: 'test', category: 'study', tags: ['ResNet', 'CV', 'PyTorch'], is_pinned: false, views: 45, created_at: '2026-03-10T00:00:00Z', updated_at: '2026-03-10T00:00:00Z' },
   { id: '3', title: 'Transformer Study 킥오프 세션 정리', content: 'Attention is All You Need...', author_id: null, author_name: 'test', category: 'study', tags: ['Transformer', 'NLP'], is_pinned: false, views: 67, created_at: '2026-03-08T00:00:00Z', updated_at: '2026-03-08T00:00:00Z' },
   { id: '4', title: '26-Spring Senior Session 프로젝트 소개', content: '이번 학기 시니어 트랙...', author_id: null, category: 'activity', tags: ['Senior', 'Project'], is_pinned: false, views: 88, created_at: '2026-03-05T00:00:00Z', updated_at: '2026-03-05T00:00:00Z' },

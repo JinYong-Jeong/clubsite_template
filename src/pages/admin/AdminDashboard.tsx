@@ -71,7 +71,7 @@ const AdminDashboard: React.FC = () => {
           <div className="flex items-center justify-between mb-12">
             <div>
               <h1 className="text-2xl font-semibold text-aing-text">Admin Dashboard</h1>
-              <p className="text-aing-muted text-sm mt-1">A.ing 관리자 패널</p>
+              <p className="text-aing-muted text-sm mt-1">YourClub 관리자 패널</p>
             </div>
             <button
               onClick={() => { logout(); navigate('/'); }}

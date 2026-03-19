@@ -43,7 +43,7 @@ const LoginPage: React.FC = () => {
               <LogIn size={20} className="text-aing-blue" />
             </div>
             <h1 className="text-xl font-semibold text-aing-text">로그인</h1>
-            <p className="text-aing-muted text-sm mt-1">A.ing 멤버 로그인</p>
+            <p className="text-aing-muted text-sm mt-1">YourClub 멤버 로그인</p>
           </div>
 
           <form onSubmit={handleSubmit} className="card space-y-4">
@@ -85,7 +85,7 @@ const LoginPage: React.FC = () => {
               {loading ? '로그인 중...' : '로그인'}
             </button>
             <p className="text-xs text-aing-muted text-center pt-1">
-              A.ing 멤버로 등록된 이름과 비밀번호를 사용하세요.
+              YourClub 멤버로 등록된 이름과 비밀번호를 사용하세요.
             </p>
             <p className="text-xs text-aing-muted text-center">
               비밀번호를 잊으셨나요?{' '}

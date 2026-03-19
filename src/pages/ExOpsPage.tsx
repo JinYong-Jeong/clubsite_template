@@ -172,7 +172,7 @@ const ExOpsPage: React.FC = () => {
               <span className="text-gradient">역대 운영진</span>
             </h1>
             <p className="section-subtitle max-w-xl">
-              A.ing을 이끌어 온 역대 운영진 명단입니다.
+              YourClub을 이끌어 온 역대 운영진 명단입니다.
             </p>
           </AnimatedSection>
           {isAdmin && (

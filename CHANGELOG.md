@@ -1,4 +1,4 @@
-# A.ing Website - Changelog
+# YourClub Website - Changelog
 
 ## 2026-03-19
 

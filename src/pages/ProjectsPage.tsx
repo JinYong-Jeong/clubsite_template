@@ -41,7 +41,7 @@ const demoProjects: Project[] = [
     status: 'ongoing',
     semester: '2026 Spring',
     tags: ['CV', 'ResNet', 'PyTorch'],
-    github: 'https://github.com/aing-gachon/26-Spring-ResNet-Study',
+    github: 'https://github.com/yourclub-github/26-Spring-ResNet-Study',
     created_at: '2026-03-01T00:00:00Z',
     updated_at: '2026-03-01T00:00:00Z',
   },
@@ -53,7 +53,7 @@ const demoProjects: Project[] = [
     status: 'ongoing',
     semester: '2026 Spring',
     tags: ['NLP', 'Transformer', 'Attention'],
-    github: 'https://github.com/aing-gachon/26-Spring-Transformer-Study',
+    github: 'https://github.com/yourclub-github/26-Spring-Transformer-Study',
     created_at: '2026-03-01T00:00:00Z',
     updated_at: '2026-03-01T00:00:00Z',
   },
@@ -65,7 +65,7 @@ const demoProjects: Project[] = [
     status: 'ongoing',
     semester: '2026 Spring',
     tags: ['Senior', 'CV', 'NLP', 'RL'],
-    github: 'https://github.com/aing-gachon/26-Spring-Senior-Session',
+    github: 'https://github.com/yourclub-github/26-Spring-Senior-Session',
     created_at: '2026-03-01T00:00:00Z',
     updated_at: '2026-03-01T00:00:00Z',
   },
@@ -256,7 +256,7 @@ const ProjectsPage: React.FC = () => {
             <h1 className="section-title text-5xl mb-4">
               <span className="text-gradient">Project History</span>
             </h1>
-            <p className="section-subtitle">A.ing에서 진행한 모든 스터디, 프로젝트, 연구를 기록합니다.</p>
+            <p className="section-subtitle">YourClub에서 진행한 모든 스터디, 프로젝트, 연구를 기록합니다.</p>
           </AnimatedSection>
         </div>
       </section>

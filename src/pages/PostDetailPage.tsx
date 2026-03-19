@@ -18,7 +18,7 @@ const CATEGORY_COLORS: Record<string, string> = {
 const demoPost: Post = {
   id: '1',
   title: '[공지] 2026 Spring 신규 부원 모집 안내',
-  content: `안녕하세요, **A.ing**입니다.\n\n2026 Spring 학기 신규 부원을 모집합니다.\n\n## 모집 대상\n- 가천대학교 재학생 (학년 무관)\n- Python 기초 지식 보유자\n- AI/ML에 관심 있는 분\n\n## 지원 방법\n아래 Contact 페이지를 통해 지원해주세요.\n\nA.ing에서 함께 성장해요! 🚀`,
+  content: `안녕하세요, **YourClub**입니다.\n\n2026 Spring 학기 신규 부원을 모집합니다.\n\n## 모집 대상\n- ○○대학교 재학생 (학년 무관)\n- Python 기초 지식 보유자\n- AI/ML에 관심 있는 분\n\n## 지원 방법\n아래 Contact 페이지를 통해 지원해주세요.\n\nYourClub에서 함께 성장해요! 🚀`,
   author_id: null,
   category: 'notice',
   tags: ['모집', '2026', 'Spring'],
