@@ -20,7 +20,7 @@ git clone https://github.com/JinYong-Jeong/clubsite_template
 cd clubsite_template
 npm install
 cp .env.example .env  # Supabase 키 입력
-npm run dev
+npm start
 ```
 
 자세한 설정 방법은 [FEATURES.md](./FEATURES.md)를 참고하세요.
