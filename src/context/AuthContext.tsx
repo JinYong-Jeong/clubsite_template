@@ -37,6 +37,17 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   }, []);
 
   const login = async (name: string, password: string): Promise<boolean> => {
+    // ⚠️  TODO (TEMPLATE SETUP): 하드코딩된 임시 admin 계정
+    // DB 연동 전 테스트용으로만 사용. 실서비스 전 반드시 아래 블록 삭제할 것.
+    // 삭제 후에는 아래 DB 로그인 로직(users/members 테이블)으로만 동작함.
+    if (name.trim() === 'admin' && password === 'admin') {
+      const u: AuthUser = { id: 'admin', name: 'admin', role: 'admin', member_id: null };
+      setUser(u);
+      sessionStorage.setItem('aing_user', JSON.stringify(u));
+      return true;
+    }
+    // ⚠️  TODO END
+
     // 1. users 테이블 확인
     try {
       // v11: bcrypt 해싱 검증 (check_user_password RPC)
