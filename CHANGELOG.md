@@ -2,7 +2,7 @@
 
 ## 2026-03-19
 
-### 최종 완료 기능
+### [0.9.0]
 
 - AdminSettings → 사이트 전역 반영 (Footer, Contact, Members 관심분야)
 - 관심분야 태그 추가/삭제 UI
