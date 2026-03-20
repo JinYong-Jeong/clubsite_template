@@ -21,7 +21,7 @@ export const AdminProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   }, []);
 
   const login = (id: string, pw: string): boolean => {
-    if (id === 'admin' && pw === '2026') {
+    if (id === 'admin' && pw === 'admin') {
       setIsAdmin(true);
       sessionStorage.setItem('aing_admin', 'true');
       return true;

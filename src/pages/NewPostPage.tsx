@@ -41,8 +41,10 @@ const NewPostPage: React.FC = () => {
     }
   }, [user]);
 
+  const escapeHtml = (s: string) =>
+    s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#039;');
   const renderPreview = (content: string) => {
-    return content
+    return escapeHtml(content)
       .replace(/\*\*(.*?)\*\*/g, '<strong class="text-aing-text">$1</strong>')
       .replace(/## (.*)/g, '<h2 class="text-lg font-semibold text-aing-text mt-6 mb-3">$1</h2>')
       .replace(/# (.*)/g, '<h1 class="text-xl font-semibold text-aing-text mt-6 mb-3">$1</h1>')
